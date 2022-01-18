@@ -1,0 +1,16 @@
+[programs.localnet]
+marketplace = "HHvW48gDNVWMbJdvotQfQLwQCMJHgRP2XyGT86ixswUE"
+[programs.devnet]
+marketplace = "HHvW48gDNVWMbJdvotQfQLwQCMJHgRP2XyGT86ixswUE"
+[programs.testnet]
+marketplace = "HHvW48gDNVWMbJdvotQfQLwQCMJHgRP2XyGT86ixswUE"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/ubuntu/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/ignore_creators.ts"
